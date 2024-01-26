@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 2 - Clase 6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="calcularSalarioAnual">
+      <button
+        onclick="eliminarInputElement()"
+        type="button"
+        name="quitar"
+        id="quitar"
+      >
+        Quitar
+      </button>
+      <button type="button" name="agregar" id="agregar">Agregar</button>
+      <br />
+      <button
+        class="oculto"
+        style="width: 117px"
+        type="button"
+        name="calcular"
+        id="calcular"
+      >
+        Calcular
+      </button>
+      <div class="integrantes"></div>
+    </form>
+    <div id="resultados" class="oculto">
+      <p>El salario anual mas alto es: <strong id="mayor-salario"></strong></p>
+      <p>El salario anual mas bajo es: <strong id="menor-salario"></strong></p>
+      <p>
+        El salario anual promedio es:
+        <strong id="promedioanual-salario"></strong>
+      </p>
+      <p>
+        El salario mensual promedio es:
+        <strong id="promediomensual-salario"></strong>
+      </p>
+    </div>
+    <script type="text/javascript" src="pruebas.js"></script>
+    <script type="text/javascript" src="calculos.js"></script>
+    <script type="text/javascript" src="Tarea2.js"></script>
+  </body>
+</html>
